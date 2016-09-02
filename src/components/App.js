@@ -39,8 +39,8 @@ class App extends Component {
         secondStatefulListItem,
         statefulListItems;
 
-    firstStatefulListItem = <StatefulListItem name={firstListItem.name} />;
-    secondStatefulListItem = <StatefulListItem name={secondListItem.name} />;
+    firstStatefulListItem = <StatefulListItem key = {firstListItem.id} name={firstListItem.name} />;
+    secondStatefulListItem = <StatefulListItem key = {secondListItem.id} name={secondListItem.name} />;
     statefulListItems = [firstStatefulListItem, secondStatefulListItem];
 
     return(
